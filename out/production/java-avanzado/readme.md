@@ -85,3 +85,28 @@ return x + y;
   las variables anteriores y así no perder su valor.
 * Sino se implementa bien la recursivada la funcion puede ser muy lenta ya que se crea un
  nuevo frame cada vez que se autoinvoca.
+* investigar técnicas de memoraliza para poder mejorar los tiempos 
+
+**********************************************************************
+                    SERVICIO REST
+Es un aplicación web que cumple con ciertos patrones determinados
+
+* VERBOS HTTP 
+- Tipo de petición que enviamos a un servidor utilizando el protocolo HTTPS
+- GET : obtiene los recursos del servidor
+- POST: envio datos al servidor
+- PUT: actualizar algo que ya exista en el servidor y envia todos los datos para su actualización
+- PATCH : actualizar algo que ya exista en el servidor pero solo envia los datos que han cambiado. por ej, name.
+- DELETE : borra un recurso del servidor que exista
+
+*********************************************************************************
+					PATRONES DE DISEÑO
+- Creacionales
+- Estructurales
+- Comportamiento
+
+Creacionales:
+* Singleton: solo puede haber una solo instancia de una clase
+* Factory: se usa para crear una jerarquia de clases 
+* Builder: Nos permite contruir objetos complejos paso a paso, y evitamos tener un mega constructor
+* Prototype: tiene como objeto auto clonarse y que herede todos sus propiedades y metodos de su clon, y su estados
