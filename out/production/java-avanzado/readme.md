@@ -2,10 +2,10 @@ Principios básicos de la Programación Funcional
 
 Funciones puras:
 
-* Solo debe trabajar con sus propios parametros 
+* Solo debe trabajar con sus propios parámetros 
 * deben devolver lo que dice que hacer, si suma devuelve una suma
-* no pueden modifcar datos ajenos a la función
-* siempre devuelven el mismo valor si ingresamos los mismos parametros
+* no pueden modificar datos ajenos a la función
+* siempre devuelven el mismo valor si ingresamos los mismos parámetros
 
 // ej función pura
 public static function suma(int a, int b){
@@ -74,18 +74,18 @@ return x + y;
 *Vamos a usar la recursión siempre que haga mas claro nuestro código
 *Siempre que trabajemos con recursividad vamos a tener que poner una sentencia de control 
  o punto de salida.
-*Recursividad de cabeza : invoca primero a la función recursiva
-*Recursividad de cola :  se llama al final la función recursiva
+*Recursividad de cabeza: invoca primero a la función recursiva
+*Recursividad de cola: se llama al final la función recursiva
       Ventajas de la recursiva
-*reduce la complejidad del tiempo (tiempo de preceso)
+*reduce la complejidad del tiempo (tiempo de proceso)
 * Añade claridad cuando debemos escribir y depurar código
-* lo mas usados es recorrer un arbol binario.
+* los más usados es recorrer un árbol binario.
             Desventajas de la recursiva
-* Mucho consumo de memoria. Cada vez que se llama se crea una copia para no modifcar 
+* Mucho consumo de memoria. Cada vez que se llama se crea una copia para no modificar 
   las variables anteriores y así no perder su valor.
-* Sino se implementa bien la recursivada la funcion puede ser muy lenta ya que se crea un
+* Si no se implementa bien la recursividad la función puede ser muy lenta, ya que se crea un
  nuevo frame cada vez que se autoinvoca.
-* investigar técnicas de memoraliza para poder mejorar los tiempos 
+* investigar técnicas de memorize para poder mejorar los tiempos 
 
 **********************************************************************
                     SERVICIO REST
@@ -94,9 +94,9 @@ Es un aplicación web que cumple con ciertos patrones determinados
 * VERBOS HTTP 
 - Tipo de petición que enviamos a un servidor utilizando el protocolo HTTPS
 - GET : obtiene los recursos del servidor
-- POST: envio datos al servidor
-- PUT: actualizar algo que ya exista en el servidor y envia todos los datos para su actualización
-- PATCH : actualizar algo que ya exista en el servidor pero solo envia los datos que han cambiado. por ej, name.
+- POST: envió datos al servidor
+- PUT: actualizar algo que ya exista en el servidor y envía todos los datos para su actualización
+- PATCH : actualizar algo que ya exista en el servidor, pero solo envía los datos que han cambiado. por ej.: name.
 - DELETE : borra un recurso del servidor que exista
 
 *********************************************************************************
@@ -106,7 +106,13 @@ Es un aplicación web que cumple con ciertos patrones determinados
 - Comportamiento
 
 Creacionales:
-* Singleton: solo puede haber una solo instancia de una clase
-* Factory: se usa para crear una jerarquia de clases 
-* Builder: Nos permite contruir objetos complejos paso a paso, y evitamos tener un mega constructor
-* Prototype: tiene como objeto auto clonarse y que herede todos sus propiedades y metodos de su clon, y su estados
+* Singleton: solo puede haber una instancia de una clase
+* Factory: se usa para crear una jerarquía de clases 
+* Builder: Nos permite construir objetos complejos paso a paso, y evitamos tener un mega constructor
+* Prototype: tiene como objeto autoclonarse y que herede todos sus propiedades y métodos de su clon, y sus estados
+
+Estructurales:
+* Decorador: Añade funcionalidad a una clase ya existente sin modificar esa clase ya existente. 
+* Adaptador: crea una clase que permita que clases con la misma implementación y clases con distinta implementación
+            funcionen coherentemente. 
+* Farchada:
